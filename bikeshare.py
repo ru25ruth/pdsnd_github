@@ -152,6 +152,7 @@ def user_stats(df):
     print('-'*40)
 
 def view_data(df):
+    # Display trip data 5 rows each time
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     start_loc = 0
     last_loc = df['Start Time'].count()
