@@ -124,19 +124,20 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # TO DO: Display counts of user types
+    # Display counts of user types
     user_types = df['User Type'].value_counts()
     print("user_types:")
     print(user_types)
+    # Display counts of gender
+    # Keyerror handling
     try:
-        # TO DO: Display counts of gender
         gender = df['Gender'].value_counts()
         print("\ngender:")
         print(gender)
     except KeyError:
         print("\nThere is no gender data.")
-# ### error handling needed ###
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth
+    # Keyerror handling
     try:
         earliest_year = int(df['Birth Year'].min())
         most_recent_year = int(df['Birth Year'].max())
