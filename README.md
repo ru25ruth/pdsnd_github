@@ -11,7 +11,7 @@ This Project is to learn github usage on bikeshare.py file
 
 ### Files used
 bikeshare.py
-3 csv files
+3 csv files(chicago.csv, new_york_city.csv, washington.csv)
 
 ### Credits
 ru25ruth at udacity online course
